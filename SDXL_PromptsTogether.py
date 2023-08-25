@@ -6,16 +6,16 @@ class SDXL_PromptsTogether:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "bpg": ("STRING", {"default": "", "multiline": True}),
-                "bpl": ("STRING", {"default": "", "multiline": True}),
-                "bng": ("STRING", {"default": "", "multiline": True}),
-                "bnl": ("STRING", {"default": "", "multiline": True}),
-                "rp": ("STRING", {"default": "", "multiline": True}),
-                "rn": ("STRING", {"default": "", "multiline": True}),
+                "bpg": ("STRING", {"default": "CLIP G / BASE Positive", "multiline": True}),
+                "bpl": ("STRING", {"default": "CLIP L / BASE Positive", "multiline": True}),
+                "bng": ("STRING", {"default": "CLIP G / BASE Negative", "multiline": True}),
+                "bnl": ("STRING", {"default": "CLIP L / BASE Negative", "multiline": True}),
+                "rp": ("STRING", {"default": "REFINER Positive", "multiline": True}),
+                "rn": ("STRING", {"default": "REFINER Negative", "multiline": True}),
             }
         }
     RETURN_TYPES = ("STRING", "STRING", "STRING", "STRING", "STRING", "STRING", "STRING")
-    RETURN_NAMES = ("BASE Positive G", "BASE Positive L", "BASE Positive G+L", "BASE Negative G", "BASE Negative L", "REFINE Positive", "REFINE Negative")
+    RETURN_NAMES = ("CLIP G / BASE Positive", "CLIP L / BASE Positive", "CLIP G+L / BASE Positive", "CLIP G / BASE Negative", "CLIP L / BASE Negative", "REFINER Positive", "REFINER Negative")
     FUNCTION = "prompts"
 
     CATEGORY = "utils"
