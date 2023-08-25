@@ -15,7 +15,7 @@ class SDXL_PromptsTogether:
             }
         }
     RETURN_TYPES = ("STRING", "STRING", "STRING", "STRING", "STRING", "STRING", "STRING")
-    RETURN_NAMES = ("CLIP G / BASE Positive", "CLIP L / BASE Positive", "CLIP G+L / BASE Positive", "CLIP G / BASE Negative", "CLIP L / BASE Negative", "REFINER Positive", "REFINER Negative")
+    RETURN_NAMES = ("CLIP G / BASE P", "CLIP L / BASE P", "CLIP G+L / BASE P", "CLIP G / BASE N", "CLIP L / BASE N", "REFINER P", "REFINER N")
     FUNCTION = "prompts"
 
     CATEGORY = "utils"
