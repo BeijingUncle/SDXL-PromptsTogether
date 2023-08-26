@@ -6,7 +6,7 @@ class SDXL_PromptsTogether:
     def INPUT_TYPES(s):
         return {
             "required": {
-                "bpg": ("STRING", {"default": "CLIP G / BASE Positive", "multiline": True}),
+                "bpg": ("STRING", {"default": "", "display": "CLIP G / BASE Positive", "multiline": True}),
                 "bpl": ("STRING", {"default": "CLIP L / BASE Positive", "multiline": True}),
                 "bng": ("STRING", {"default": "CLIP G / BASE Negative", "multiline": True}),
                 "bnl": ("STRING", {"default": "CLIP L / BASE Negative", "multiline": True}),
